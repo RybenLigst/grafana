@@ -37,7 +37,7 @@ Restart=always
 [Install]
 WantedBy=multi-user.target
 
-------------------------------------------------------------------------------------------
+---------------------------------------------|Restart snmp_exporter services|---------------------------------------------
 
 systemctl daemon-reload
 
@@ -49,7 +49,7 @@ systemctl enable snmp_exporter
 
 nano /var/lib/docker/volumes/monitoring_prom-configs/_data/prometheus.yml
 
-------------------------------------------------------------------------------------------
+---------------------------------------------|Job for Microtik|---------------------------------------------
 
 - job_name: 'Mikrotik'
     static_configs:
